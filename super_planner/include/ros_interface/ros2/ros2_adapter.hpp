@@ -22,7 +22,6 @@
 */
 
 
-#ifdef USE_ROS2
 #ifndef SRC_ROS2_ADAPTER_HPP
 #define SRC_ROS2_ADAPTER_HPP
 
@@ -56,7 +55,7 @@ namespace ros_interface {
 
     const std::string DEFAULT_FRAME_ID = "world";
 
-    class Ros1Adapter {
+    class Ros2Adapter {
     public:
         /* For visualization ============================================================*/
         static void deleteAllMarkerArray(const MarkerArrayPubPtr &pub_) {
@@ -782,5 +781,4 @@ namespace ros_interface {
 
 }
 
-#endif //SRC_ROS1_VISUALIZER_HPP
-#endif
+#endif //SRC_ROS2_ADAPTER_HPP

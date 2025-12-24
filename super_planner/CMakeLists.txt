@@ -28,8 +28,6 @@ set(CMAKE_PREFIX_PATH ../../../install)
 include_directories(
         SYSTEM
         include
-        ../../../devel/include
-        ${catkin_INCLUDE_DIRS}
         ${Eigen3_INCLUDE_DIRS}
         ${PCL_INCLUDE_DIRS}
 )
