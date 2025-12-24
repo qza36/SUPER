@@ -31,12 +31,12 @@ find_package(visualization_msgs REQUIRED)
 find_package(marsim_render REQUIRED)
 find_package(mars_quadrotor_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
-find_package(pcl_conversions REQUIRED)
 
 # Other packages
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(pcl_conversions REQUIRED)
 
 
 include_directories(
@@ -44,7 +44,6 @@ include_directories(
         include
         ${Eigen3_INCLUDE_DIRS}
         ${PCL_INCLUDE_DIRS}
-
 )
 
 set(THIRD_PARTY
